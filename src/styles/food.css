@@ -1,0 +1,68 @@
+.carousel-container {
+    margin: 0 10%; /* Consistent margins for the entire container */
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .header-container h2 {
+    margin: 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .scroll-button {
+    background-color: #dee0e2;
+    color: rgb(13, 13, 13);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+     
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, etc. */
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto; /* Prevent wrapping */
+    width: 150px;
+    text-align: center;
+    width: calc(22% - 15px);
+    /* Hide horizontal scroll for better alignment */
+
+
+  }
+  
+  .food-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+  }
+  
