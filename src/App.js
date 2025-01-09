@@ -10,6 +10,7 @@ import Timer from './components/Timer';
 import UseRefHook from './Hooks/UseRefHook';
 import UseRefHooks from './Hooks/UseRefHooks';
 import UseContextHook from './Hooks/UseContextHook';
+import Watch from './Hooks/watch';
 // import UseContextHook from './components/usecontexthook';
 function App() {
   return (
@@ -32,8 +33,9 @@ function App() {
       {/* <Color /> */}
       {/* <Timer /> */}
       {/* <UseRefHooks /> */}
-      <UseContextHook />
-      <UseRefHook />
+      {/* <UseContextHook />
+      <UseRefHook /> */}
+      <Watch />
     </div>
   );
 }
