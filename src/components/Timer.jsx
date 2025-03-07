@@ -4,11 +4,12 @@ function Timer() {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    console.log("useeffect");
 
     const interval = setInterval(() => {
       setSeconds((prevSeconds) => prevSeconds + 1);
     }, 1000);
+
+  
 
     return () => clearInterval(interval);
   },[]);
