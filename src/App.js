@@ -4,15 +4,17 @@ import Home from './components/home';
 import Login from './components/login';
 import Signin from './components/signin';
 import Parent from './components/Parent';
-import Counter from './Hooks/Counter';
+import Counter from './NewHooks/Counter';
 import Color from './Hooks/Color';
-import Timer from './components/Timer';
+import Timer from './NewHooks/Timer';
 import UseRefHook from './Hooks/UseRefHook';
 import UseRefHooks from './components/UseRefHooks';
 import UseContextHook from './Hooks/UseContextHook';
 import Watch from './Hooks/watch';
 import CounteApp from './Hooks/CounteApp';
 import UseContextHooks from './Hooks/UseContextHooks';
+import DataPass from './NewHooks/DataPass';
+import InputData from './NewHooks/InputData';
 // import UseContextHook from './components/usecontexthook';
 function App() {
   return (
@@ -41,8 +43,13 @@ function App() {
       {/* <CounteApp />
       <Color />
       <Timer /> */}
-      <UseContextHooks />
-      <UseRefHooks />
+      {/* <UseContextHooks />
+      <UseRefHooks /> */}
+      {/* <Counter />
+      <Timer />
+      <Color /> */}
+      <DataPass />
+      <InputData />
     </div>
   );
 }
